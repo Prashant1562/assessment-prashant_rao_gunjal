@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@maizzle/framework": "latest",
+    "maizzle": "^0.0.1",
     "sharp": "^0.33.4",
     "tailwindcss-box-shadow": "^2.0.0",
     "tailwindcss-email-variants": "^2.0.0",
