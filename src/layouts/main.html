@@ -14,10 +14,34 @@
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
     <style data-embed>
-      img + div {
+      @media only screen and (max-width: 598px) {
+        .mobile_responsive {
+          width: 100% !important;
+          height: auto !important;
+          display: block !important;
+        }
+        .extra {
+          height: 20px !important;
+        }
+        .headarpadding{
+          padding-right: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 479px) {
+        .media_padding {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        .headarpadding{
+          padding-right: 0px !important;
+        }
+      } 
+      
+       img + div {
         display: none !important;
       }
-    </style>
+      </style>
+      
     <!--[if mso]>
       <noscript>
         <xml>
@@ -52,6 +76,7 @@
         }
       </style>
     <![endif]-->
+
     <if condition="page.title">
       <title>[[[ page.title ]]]</title>
     </if>
@@ -63,6 +88,7 @@
       <script defer src="scripts/redactor.js" type="module"></script>
     </if>
   </head>
+
   <body
     class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] [[ page.bodyClass || '' ]]"
   >
@@ -74,6 +100,7 @@
             >&#8199;&#65279;&#847;
           </each>
         </div>
+
         <div
           role="article"
           aria-roledescription="email"
@@ -99,5 +126,6 @@
       >
         <content /></div
     ></else>
+    
   </body>
 </html>
